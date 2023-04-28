@@ -32,12 +32,13 @@ A second model was created to optimize the model thus deriving better results.  
     
     ![Initial Model](https://github.com/SusanFair/Neural_Network_Charity_Analysis/blob/main/Resources/InitialModel.PNG)<br>
 
-* <b>Optimized Model</b>  With optimization the results improved to a Loss of ?? and 0panAccuracy of ??  The inital steps of optimization included assessing the results of running an optimizer.
+* <b>Optimized Model</b>  With optimization the results improved to a Loss of .38 and an Accuracy score of .81  The inital steps of optimization included assessing the results of running an optimizer.
     * The NAME column was returned to the dataset.  This increased substantilly the number of inputs (input breadth).  Therefore the number of neurons were increased accordingly. 
     * Total input were 835
     * First Hidden Layer - 1800 Neurons.  This number was based on the rule of thumb that the total number of neurons should be 2 times the number of inputs
     * Second Hidden Layer - 1200 Neurons.  This number was based on the concept on concentration of results.  The initial layer handling all of the inputs and the second layer only working with the output of the first layer
     * Relu activation function was used in both layers
+    * The model was saved in the file - [AlphabetSoupCharity_Optimization.h5](https://github.com/SusanFair/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization.h5)<br>
 
     ![Optimized Model](https://github.com/SusanFair/Neural_Network_Charity_Analysis/blob/main/Resources/OptimizedModel.PNG)<br>
 

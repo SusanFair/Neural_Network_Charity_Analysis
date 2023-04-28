@@ -10,17 +10,19 @@ The dataset consistes of 34,000 organization that have previously received fundi
 
 
 
-# Results: Using bulleted lists and images to support your answers, address the following questions.
+# Results: <br>
 There is a bulleted list that answers all six questions (15 pt)
 
-##Data Preprocessing
-    * <b>Target Variable:</b>  The target variable is the final result "IS_SUCCESSFUL"  Using historical data classifying those who received funding and where or will be successful.
-    * <b>Features include:</b> APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS and ASK_AMT.
-    * <b>Removed:</b>  
+## Data Preprocessing<br>
+* <b>Target Variable:</b>  The target variable is the final result "IS_SUCCESSFUL"  Using historical data classifying those who received funding and where or will be successful.
+
+* <b>Features include:</b> APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS and ASK_AMT.
+
+* <b>Removed:</b>  
         * In the initial model the columns EIN and NAME were removed.
         * For optimization only the columns EIN were removed.  
 
-##Compiling, Training, and Evaluating the Model
+## Compiling, Training, and Evaluating the Model<br>
     * Neurons, Layers, and Activation functions
         * ?? Neurons in Layer 1, ?? Neurons in Layer 2
         * Relu activation function was used in each layer
@@ -30,7 +32,7 @@ There is a bulleted list that answers all six questions (15 pt)
     * The name column was returned to the dataset.  This increased substantilly the number of inputs (input breadth).  Therefore the number of neurons were increased accordingly. 
 
 
-# Summary
+# Summary<br>
 The overall results despite optimization are still not ideal.  Accuracy is still below 90% and loss numbers remain high.
 
 As an improvement option running Random Forest on the initial dataset first would help to detect features bagging them for later use in deep learning. Providing a early siffoning prior to training the deep learning model

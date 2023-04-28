@@ -1,19 +1,38 @@
-# Neural_Network_Charity_Analysis
+# Neural Network Charity Analysis
+
+# Overview of the Analysis
+
+The objective of this analysis is to train a neural network that is able tp predict whether a funding applicant will be successsful or not.  Alphabet Soup our sponsor will use this prediction to select the best candidate for investment in their the Charitable Funding Program.
 Neural Network Exploration
-Beks has come a long way since her first day at that boot camp five years ago—and since earlier this week, when she started learning about neural networks! Now, she is finally ready to put her skills to work to help the foundation predict where to make investments.
 
-With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+The dataset consistes of 34,000 organization that have previously received funding in the past.  This will be the base used to train our model.
 
-From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
-EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organization classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organization type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special consideration for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
+
+
+# Results: Using bulleted lists and images to support your answers, address the following questions.
+There is a bulleted list that answers all six questions (15 pt)
+
+##Data Preprocessing
+    * <b>Target Variable:</b>  The target variable is the final result "IS_SUCCESSFUL"  Using historical data classifying those who received funding and where or will be successful.
+    * <b>Features include:</b> APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS and ASK_AMT.
+    * <b>Removed:</b>  
+        * In the initial model the columns EIN and NAME were removed.
+        * For optimization only the columns EIN were removed.  
+
+##Compiling, Training, and Evaluating the Model
+    * Neurons, Layers, and Activation functions
+        * ?? Neurons in Layer 1, ?? Neurons in Layer 2
+        * Relu activation function was used in each layer
+        * This combination was drawn from the results of running an optimizer.
+    * With optimization model improvements were seen.  
+        The original model returned a Loss of ??  and Accuracy score of ??  With optimization the results improved to a Loss of ?? and 0panAccuracy of ??
+    * The name column was returned to the dataset.  This increased substantilly the number of inputs (input breadth).  Therefore the number of neurons were increased accordingly. 
+
+
+# Summary
+The overall results despite optimization are still not ideal.  Accuracy is still below 90% and loss numbers remain high.
+
+As an improvement option running Random Forest on the initial dataset first would help to detect features bagging them for later use in deep learning. Providing a early siffoning prior to training the deep learning model
+
+
